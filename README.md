@@ -1,6 +1,7 @@
 ﻿# Example of a Helm Chart to configure Secrets and ConfigMaps from a file
 
 This helm-chart has a secret configuration and a configmap created from files found in the template itself.
+Helm's official documentation was used: https://helm.sh/docs/chart_template_guide/accessing_files/
 
 In the "certificates" folder are the files that will be used to create the secret and in the "resources" folder are the files that are used to create a configmap </br>
 ![helmchartstructure](https://user-images.githubusercontent.com/25550691/147822740-ed977553-6aa3-4882-aec4-6627f8c14224.png)
