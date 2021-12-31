@@ -3,6 +3,7 @@
 This helm-chart has a secret configuration and a configmap created from files found in the template itself.
 
 In the "certificates" folder are the files that will be used to create the secret and in the "resources" folder are the files that are used to create a configmap
+![image](https://user-images.githubusercontent.com/25550691/147822629-c1519d88-b318-48b2-95f9-36b11cae953f.png)
 
 ## Secret
 
