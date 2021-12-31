@@ -28,7 +28,7 @@ spec:
       volumes:
       - name: properties
         configMap:
-          name: rap-da-config
+          name: configmap-config
       - name: certificates
         secret:
           secretName: da-core-server-certificates

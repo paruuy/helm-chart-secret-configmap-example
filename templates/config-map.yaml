@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata: 
-    name: rap-da-config
+    name: configmap-config
 data: 
     da-core-server.properties: |+
         {{ range .Files.Lines "resources/da-core-server.properties" }}

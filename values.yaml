@@ -24,8 +24,6 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
-server:
-  contextPath: /acm/preprd
 
 app:  
   daCore:
