@@ -2,7 +2,13 @@
 
 This helm-chart has a secret configuration and a configmap created from files found in the template itself.
 
-In the "certificates" folder are the files that will be used to create the secret and in the "resources" folder are the files that are used to create a configmap
+In the "certificates" folder are the files that will be used to create the secret and in the "resources" folder are the files that are used to create a configmap </br>
+![helmchartstructure](https://user-images.githubusercontent.com/25550691/147822740-ed977553-6aa3-4882-aec4-6627f8c14224.png)
+
+**Limitations**
+- It is okay to add extra files to your Helm chart. These files will be bundled. Be careful, though. Charts must be smaller than **1M** because of the storage limitations of Kubernetes objects.
+- Files in templates/ cannot be accessed.
+- Files excluded using .helmignore cannot be accessed.
 
 ## Secret
 
