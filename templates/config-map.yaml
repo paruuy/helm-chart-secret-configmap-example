@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+    name: rap-da-config
+data: 
+    da-core-server.properties: |+
+        {{ range .Files.Lines "resources/da-core-server.properties" }}
+        {{ . }}{{ end }}
+    da-ui-server.properties: |+
+        {{ range .Files.Lines "resources/da-ui-server.properties" }}
+        {{ . }}{{ end }}
+
